@@ -7,6 +7,7 @@
         v-for="(lesson,idx) in lessons" 
         :key="lesson[idx]"
       >
+        <img :src="lesson.cover"/>
         <h2>{{lesson.title}}</h2>
       </div>
     </div>
@@ -44,6 +45,11 @@
 
 
 <style>
-
+  .lesson {
+    margin: 5px;
+  }
+  .lesson img {
+    width: 100px;
+  }
 </style>
 
